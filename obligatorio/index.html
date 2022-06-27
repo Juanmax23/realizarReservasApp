@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obligatorio</title>
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+
+    <div id="contenedor">
+        <div id="cabezal" class="clearfix">
+            <img id="logo" src="https://develotion.com/p1/2022_03/icon.png" alt="logo">
+            <ul id="navPrincipal">
+                <li id="btnMenuInicioDeSesion">
+                    <a>Iniciar Sesion</a>
+                </li>
+                <li id="btnMenuRegistrarUsuario">
+                    <a>Registrarse</a>
+                </li>
+                <li id="btnMenuGoHome">
+                    <a>Home</a>
+                </li>
+                <li id="btnMenuCerrarSesion">
+                    <a>Cerrar Sesion</a>
+                </li>
+            </ul>
+            <div id="aux">
+                <!-- Menu Usuario persona -->
+                <a id="btnMenuMisReservas">Mis Reservas</a> 
+
+                <a id="btnMenuMiLocal">Mi Local</a>
+            </div>
+        </div>
+
+        <div id="contenido">
+
+            <!-- **** LOGIN **** -->
+            <div id="divLoginUsuario">
+                <h1>Iniciar Sesi&oacute;n</h1>
+
+                <label for="txtNombreUsuario"> Ingrese su nombre de usuario: </label>
+                <input type="text" id="txtNombreUsuario">
+                <br><br>
+
+                <label for="txtContrase&ntilde;"> Ingrese su contrase&ntilde;a: </label>
+                <input type="password" id="txtContrasenaUsuario">
+
+                <p id="pMensajeLogin"></p>
+
+                <input type="button" id="btnIniciarSesion" value="Iniciar Sesi&oacute;n">
+
+
+            </div>
+
+            <!-- Registro   -->
+            <div id="divRegistrarUsuario">
+                <h1>Registrarse</h1>
+
+                <label for="txtNombreUsuarioARegistrar"> Ingrese su nombre : </label>
+                <input type="text" id="txtNombreARegistrar">
+                <br><br>
+
+                <label for="txtNombreUsuarioARegistrar"> Ingrese su nombre de usuario: </label>
+                <input type="text" id="txtNombreUsuarioARegistrar">
+                <br>
+                <p id="pNombreUsuarioARegistrar"></p>
+
+                <label for="txtContrasenaUsuarioARegistrar"> Ingrese su contrase&ntilde;a: </label>
+                <input type="password" id="txtContrasenaUsuarioARegistrar">
+                <br>
+                <p id="pContrasenaUsuarioARegistrar"></p>
+
+                <p id="pMensajeRegistro"></p>
+
+                <input type="button" id="btnRegistro" value="Registrarme">
+
+
+            </div>
+
+            <!-- informacion de las reservas del usuario Persona-->
+            <div id="divMisReservas">
+                <hr>
+                <table>
+
+                    <thead>
+                        <h1>Reservas Sin Calificar:</h1>
+                        <tr>
+                            <th>Local</th>
+                            <th>Estado</th>
+                            <th>Calificación (1 al 5)</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tBodyReservasSinCalificar"></tbody>
+
+                </table>
+                <br><br>
+                <hr>
+                <table>
+
+                    <thead id="tableReservasPendientes">
+                        <h1>Reservas Pendientes:<h1>
+                                <tr>
+                                    <th>Local</th>
+                                    <th>Nombre</th>
+                                    <th>N° lugares</th>
+                                    <th></th>
+                                </tr>
+                    </thead>
+
+                    <tbody id="TbodyReservasPendientes"></tbody>
+
+                </table>
+                <br><br>
+                <hr>
+
+                <table>
+                    <thead>
+                        <h1>Información de reservas: <h1>
+                        <h3 id="h1LocalDestacado"><h3>
+                        
+                        <tr>
+                            <th>Local</th>
+                            <th>Usted ha reservado</th>
+                            <th>Reservas totales del local</th>
+                            <th>Sus reservas corresponden al</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tBodyInformacionEstadisticaUsuarioPersona"></tbody>
+
+                </table>
+                <br><br>
+                <hr>
+                <br><br>
+
+            </div>
+
+            <div id="divMiLocal">
+               
+
+            </div>
+
+            <!-- mostrar todos los locales precargados dinamicamente en el home -->
+            <div id="divHome" class="interior">
+
+
+            </div>
+
+            <div id="divRestaurantes">
+
+            </div>
+
+
+        </div><!-- FIN CONTENIDO -->
+
+        <div id="pie">
+            <a href="https://www.ort.edu.uy">Footer</a>
+        </div>
+
+
+    </div><!-- FIN CONTENEDOR -->
+
+    <script src="./js/clases.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
+
